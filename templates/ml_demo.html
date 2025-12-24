@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #9C27B0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #9C27B0;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .result {
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-left: 4px solid #9C27B0;
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #555;
+        }
+        .value {
+            color: #FF5722;
+            font-family: monospace;
+        }
+        .description {
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #9C27B0;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background-color: #7B1FA2;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Machine Learning Algorithms Demonstration</h1>
+    
+    <div class="section">
+        <h2>Linear Regression (House Price Prediction)</h2>
+        <div class="description">
+            Using scikit-learn to predict house prices based on features
+        </div>
+        <div class="result">
+            <span class="label">R² Score (Model Fit):</span>
+            <span class="value">{{ lr_r2 }}</span>
+        </div>
+        <div class="result">
+            <span class="label">RMSE (Prediction Error):</span>
+            <span class="value">${{ lr_rmse }}</span>
+        </div>
+        <p>Production-ready model with preprocessing, cross-validation, and persistence.</p>
+    </div>
+    
+    <div class="section">
+        <h2>K-Nearest Neighbors (Iris Classification)</h2>
+        <div class="description">
+            Classifying iris flowers using distance-based algorithm
+        </div>
+        <div class="result">
+            <span class="label">Detected Classes:</span>
+            <span class="value">{{ knn_classes }}</span>
+        </div>
+        <p>KNN with hyperparameter tuning and probability estimates for production use.</p>
+    </div>
+    
+    <div class="section">
+        <h2>K-Means Clustering (Customer Segmentation)</h2>
+        <div class="description">
+            Grouping customers based on behavioral patterns
+        </div>
+        <div class="result">
+            <span class="label">Cluster Assignments:</span>
+            <span class="value">{{ kmeans_clusters }}</span>
+        </div>
+        <div class="result">
+            <span class="label">Silhouette Score (Quality):</span>
+            <span class="value">{{ kmeans_silhouette }}</span>
+        </div>
+        <p>Unsupervised learning with elbow method for optimal cluster selection.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Naive Bayes (Medical Diagnosis)</h2>
+        <div class="description">
+            Probabilistic classification for medical conditions
+        </div>
+        <div class="result">
+            <span class="label">Diagnosis Classes:</span>
+            <span class="value">{{ nb_classes }}</span>
+        </div>
+        <p>Gaussian Naive Bayes with probability estimates and class priors.</p>
+    </div>
+    
+    <a href="/" class="back-link">← Back to Home</a>
+</body>
+</html>

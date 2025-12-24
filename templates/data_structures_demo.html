@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #2196F3;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2196F3;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .result {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196F3;
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #555;
+        }
+        .value {
+            color: #ff5722;
+            font-family: monospace;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-link:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Data Structures Demonstration</h1>
+    
+    <div class="section">
+        <h2>Linked List</h2>
+        <div class="result">
+            <span class="label">List elements:</span>
+            <span class="value">{{ linked_list }}</span>
+        </div>
+        <p>Operations performed: Insert at end (10, 20, 30), Insert at beginning (5)</p>
+    </div>
+    
+    <div class="section">
+        <h2>Stack (LIFO - Last In First Out)</h2>
+        <div class="result">
+            <span class="label">Stack elements:</span>
+            <span class="value">{{ stack }}</span>
+        </div>
+        <p>Operations performed: Push 10, Push 20, Push 30</p>
+    </div>
+    
+    <div class="section">
+        <h2>Queue (FIFO - First In First Out)</h2>
+        <div class="result">
+            <span class="label">Queue elements:</span>
+            <span class="value">{{ queue }}</span>
+        </div>
+        <p>Operations performed: Enqueue 10, Enqueue 20, Enqueue 30</p>
+    </div>
+    
+    <div class="section">
+        <h2>Binary Search Tree</h2>
+        <div class="result">
+            <span class="label">Inserted values:</span>
+            <span class="value">[50, 30, 70, 20, 40, 60, 80]</span>
+        </div>
+        <div class="result">
+            <span class="label">Inorder Traversal (sorted):</span>
+            <span class="value">{{ bst_inorder }}</span>
+        </div>
+        <div class="result">
+            <span class="label">Preorder Traversal:</span>
+            <span class="value">{{ bst_preorder }}</span>
+        </div>
+        <div class="result">
+            <span class="label">Tree Height:</span>
+            <span class="value">{{ bst_height }}</span>
+        </div>
+    </div>
+    
+    <a href="/" class="back-link">← Back to Home</a>
+</body>
+</html>

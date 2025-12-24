@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Modules - Algorithm & ML Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .card ul {
+            margin-top: 15px;
+            color: #555;
+            list-style-position: inside;
+        }
+        .card ul li {
+            margin: 5px 0;
+        }
+        .algorithms { border-left: 4px solid #4CAF50; }
+        .data-structures { border-left: 4px solid #2196F3; }
+        .machine-learning { border-left: 4px solid #9C27B0; }
+        .django { border-left: 4px solid #FF5722; }
+        
+        .info-section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .info-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .info-section p {
+            color: #666;
+            line-height: 1.8;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tech-badge {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Practice Modules Portfolio</h1>
+            <p class="subtitle">Algorithms, Data Structures & Machine Learning</p>
+        </header>
+        
+        <div class="info-section">
+            <h2>About This Project</h2>
+            <p>
+                Welcome to my comprehensive portfolio demonstrating popular algorithms, data structures, 
+                and machine learning implementations. All code is written from scratch with clear comments 
+                and working examples, designed for learning and portfolio demonstration.
+            </p>
+            <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Algorithms</span>
+                <span class="tech-badge">Data Structures</span>
+                <span class="tech-badge">Machine Learning</span>
+            </div>
+        </div>
+        
+        <div class="card-grid">
+            <a href="/algorithms/" class="card algorithms">
+                <div class="card-icon">🔍</div>
+                <h2>Algorithms</h2>
+                <p>Explore popular sorting, searching, and mathematical algorithms</p>
+                <ul>
+                    <li>Bubble, Quick, Merge Sort</li>
+                    <li>Binary, Linear Search</li>
+                    <li>Fibonacci, Primes, GCD/LCM</li>
+                </ul>
+            </a>
+            
+            <a href="/data-structures/" class="card data-structures">
+                <div class="card-icon">📊</div>
+                <h2>Data Structures</h2>
+                <p>Implementation of fundamental data structures</p>
+                <ul>
+                    <li>Linked Lists</li>
+                    <li>Stack & Queue</li>
+                    <li>Binary Search Tree</li>
+                </ul>
+            </a>
+            
+            <a href="/ml-demo/" class="card machine-learning">
+                <div class="card-icon">🤖</div>
+                <h2>Machine Learning</h2>
+                <p>Basic ML algorithms with working examples</p>
+                <ul>
+                    <li>Linear Regression</li>
+                    <li>K-Nearest Neighbors</li>
+                    <li>K-Means Clustering</li>
+                </ul>
+            </a>
+            
+            <a href="/calculator/" class="card django">
+                <div class="card-icon">🧮</div>
+                <h2>Calculator</h2>
+                <p>Django-powered web calculator</p>
+                <ul>
+                    <li>Basic arithmetic operations</li>
+                    <li>Form handling demo</li>
+                </ul>
+            </a>
+        </div>
+        
+        <div class="info-section">
+            <h2>✨ Features</h2>
+            <p>
+                ✅ Clean, well-commented code<br>
+                ✅ Time & space complexity analysis<br>
+                ✅ Working examples with sample data<br>
+                ✅ Simple and readable implementation<br>
+                ✅ Portfolio-ready demonstrations
+            </p>
+        </div>
+        
+        <footer>
+            <p>Built with 💜 by Rao Faisal Maqbool | Portfolio Project 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
