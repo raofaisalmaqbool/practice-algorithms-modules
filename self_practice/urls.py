@@ -19,16 +19,21 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.portfolio_home, name='portfolio_home'),  # New portfolio landing page
+    path('base/', views.base, name='base'),
     path('home/', views.home, name='home'),
     path('courses/', views.courses, name='courses'),
     path('index/', views.index, name='index'),
     path('contact_us/', views.contact_us, name='contact_us'),
     path('about_us/', views.about_us, name='about_us'),
-    path('', views.base, name='base'),
     path('courses/<productid>', views.coursedetails, name='coursedetails'),
     path('submitform/', views.submitform, name='submitform'),
     path('calculator/', views.calculator, name='calculator'),
     path('even_odd/', views.even_odd, name='even_odd'),
-    path('newsdetails/<slug>', views.newsdetails, name='newsdetails')
+    path('newsdetails/<slug>', views.newsdetails, name='newsdetails'),
+    # New demo URLs for algorithms and ML
+    path('algorithms/', views.algorithms_demo, name='algorithms_demo'),
+    path('data-structures/', views.data_structures_demo, name='data_structures_demo'),
+    path('ml-demo/', views.ml_demo, name='ml_demo'),
 
 ]
